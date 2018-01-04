@@ -11,7 +11,7 @@ def main():
     s.listen(1)
     c, addr = s.accept()
 
-    print("Connestion from: " + str(addr))
+    print("Connection from: " + str(addr))
     while True:
         data = c.recv(1024).decode('utf-8')
         if not data:
